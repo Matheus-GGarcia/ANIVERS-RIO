@@ -1,0 +1,88 @@
+body {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+body{
+    background-image: url('assets/yuri.jpg');
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    opacity: 0.9;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -2; /* Coloca o vídeo atrás do conteúdo */
+}
+
+video {
+    position: absolute;
+    width: 200px; /* Tamanho menor */
+    height: auto; /* Mantém a proporção */
+    opacity: 10; /* Levemente transparente */
+}
+
+/* Posicionamento aleatório dos vídeos */
+#video1 { top: 10%; left: 10%; }
+#video2 { top: 20%; right: 15%; }
+#video3 { bottom: 15%; left: 20%; }
+#video4 { bottom: 10%; right: 10%; }
+
+.container {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.birthday-image {
+    width: 300px;
+    border-radius: 15px;
+    margin: 20px 0;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+h1 {
+    color: #000000;
+    font-size: 3em;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+p {
+    font-size: 3em;
+    color: #000000;
+}
