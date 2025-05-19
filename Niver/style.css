@@ -8,7 +8,7 @@ body {
     overflow: hidden;
 }
 body{
-    background-image: url('assets/yuri.jpg');
+    background-image: url('assets/folhinhess.jpg');
     background-size: cover; /* Faz a imagem cobrir toda a tela */
     background-position: center; /* Centraliza a imagem */
     opacity: 0.9;
@@ -68,8 +68,8 @@ video {
 }
 
 h1 {
-    color: #000000;
-    font-size: 3em;
+    color:rgb(255, 255, 16);
+    font-size: 4em;
     animation: slideIn 1s ease-in-out;
 }
 
